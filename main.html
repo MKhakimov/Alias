@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet">
+  <title> Alias </title>
+ </head>
+ <!-- <body onload="refresh();">
+   <span id="timer"></span> -->
+  <form>
+  <p>Выбери число от 5 до 10</p>
+  <p><input type="range" id="rng" min="5" max="10" value="5"></p>
+   <output id="result" for="rng"></output>
+  <input type="button"  onclick="getWords()" value="Выбрать">
+  <div id="2write"> </div>
+  </form>
+
+  <div id='forms'class="dynamic_fields">
+
+    <div id ="sample" class="sample_team">
+  		<div class="table">
+  			<div class="cell">
+          <input class="form-control" type="text" name="name[]"/>
+        </div>
+  			<div class="cell">
+          <button id="butt_del" class="js-remove pull-right btn btn-danger"> Удалить команду </button>
+  			</div>
+  		</div>
+  	</div>
+
+  	<!-- <div id="divTeam" class="teams"></div> -->
+
+  </div>
+  <button id="butt_add" class="js-add pull-right btn btn-success"> Добавить команду </button>
+
+  <!-- <button class="btn btn-danger">Поехали!</button> -->
+
+
+<!--
+  <script>
+    $(function() {
+    var el;
+    $("#rng").change(function() {
+    el = $(this);
+    el
+    .next("#ong")
+    .text(el.val());
+    })
+    .trigger('change');
+    });
+  </script> -->
+ </body>
+</html>
+
+<script src="JS.js"></script>
